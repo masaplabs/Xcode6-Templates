@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>If you want to make a application programmaticaly, please use this Template.
+プログラム(Swift)のみでアプリケーションを作りたい場合はこのテンプレートを使用してください。
+如果你要做APP只有程式的話可以使用這模板</string>
+	<key>Identifier</key>
+	<string>com.masaplabs.programmaticalyApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>RootTableViewController.swift</string>
+						<string>DetailViewController.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>// Override point for customization after application launch.
+
+window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+var tabBarController = UITabBarController()
+
+var rootController = UINavigationController(rootViewController: RootTableViewController())
+
+tabBarController.setViewControllers([rootController], animated: true)
+
+window?.rootViewController = tabBarController
+window?.makeKeyAndVisible()</string>
+						<key>RootTableViewController.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>RootTableViewController.swift</string>
+						</dict>
+						<key>DetailViewController.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>DetailViewController.swift</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+</dict>
+</plist>
